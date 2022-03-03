@@ -34,7 +34,7 @@ const navigate = useNavigate();//del hook de react-router-dom: navega a la url p
       let respuesta;
       if(cliente.id){ //Editando Registro
         //para actualizar un registro según los principios de REST (url/clientes/id, PUT y tipo de contenido)
-        const url = `http://localhost:4000/clientes/${cliente.id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`;
 
         respuesta = await fetch(url, {
           method: 'PUT',
@@ -46,7 +46,7 @@ const navigate = useNavigate();//del hook de react-router-dom: navega a la url p
 
       }else{//Nuevo Registro
         //para crear un nuevo registro según los principios de REST (url/clientes, POST y tipo de contenido)
-        const url = 'http://localhost:4000/clientes';
+        const url = import.meta.env.VITE_API_URL;
 
         respuesta = await fetch(url, {
           method: 'POST',

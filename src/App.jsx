@@ -10,6 +10,9 @@ import VerCliente from './paginas/VerCliente';
 
 
 function App() {
+
+  //console.log(import.meta.env.VITE_API_URL);//para acceder a las variables de entorno de VITE
+
  /*Una sola ruta = />. Las que tienen apertura y cierre indican un grupo de rutas */
   return (
 
