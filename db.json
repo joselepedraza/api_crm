@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": "Jose Luis ACT",
+      "empresa": "Josele SL",
+      "email": "correo@correo.com",
+      "telefono": "55555556",
+      "notas": "Cliente recomendado",
+      "id": 1
+    },
+    {
+      "nombre": "prueba Actualizada",
+      "empresa": "Josele SL",
+      "email": "prueba@prueba.es",
+      "telefono": "55555556",
+      "notas": "",
+      "id": 3
+    }
+  ]
+}
